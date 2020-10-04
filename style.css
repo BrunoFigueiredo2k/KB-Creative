@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+.header {
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	position: fixed;
+	background-color: white;
+	z-index: 99999;
+	border-bottom: 0.3px solid rgba(102, 102, 102, 0.308);
+}
+
+.header-dot {
+	font-size: 70px;
+	color: #666 !important;
+}
+
+.header-content {
+	height: 7vh;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header-nav {
+	margin: 0;
+	padding: 0;
+	line-height: 7vh;
+}
+
+.header-nav li {
+	display: inline;
+	padding: 15px 10px;
+}
+
+a {
+	color: blue;
+	text-decoration: none; /* no underline */
+}
+
+.header-nav a {
+	color: #242424;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.header-nav a:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+.header-nav a:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+.logo-header {
+	float: left;
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.heading {
+	font-size: 50px;
+	color: #242424;
+	margin: 20px 0;
+}
+
+p {
+	color: #666;
+	font-size: 16px;
+	line-height: 1.75em;
+	margin: 0 0 40px 0;
+}
+
+.primary-btn {
+	color: white;
+	background-color: #4a90e2;
+	border: none;
+	font-size: 18px;
+	border-radius: 20px;
+	padding: 10px 40px;
+	letter-spacing: 1px;
+	transition: 200ms smooth;
+}
+
+.primary-btn:hover {
+	background-color: #5a9be6;
+}
+
+#home {
+	padding: 15% 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.column {
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
