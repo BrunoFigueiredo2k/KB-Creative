@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../style.css">
     <!-- Animation AOS Init import -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fontawesome import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>KB Creative | Webdesign and Development</title>
 </head>
 
@@ -14,35 +16,45 @@
 
     <div class="header">
         <div class="header-content">
-            <a href="#home"><img src="../img/KB Creative.png" alt="Logo KB Creative" class="logo-header"></a>
-            <ul class="header-nav" data-aos="fade-down" data-aos-duration="300">
-                <li><a href="#service">Service</a></li>
+            <ul class="header-nav" data-aos="fade-down" data-aos-duration="600">
+                <li><a href="#home"><img src="../img/logo/KB Creative.png" alt="Logo KB Creative"
+                            class="logo-header"></a>
+                </li>
+                <li><a href="#service" style="margin-left: 40px;">Service</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li class="header-socials"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="header-socials"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="header-socials"><a href="mailto:kbcreativeAThotmailDOTcom" onclick="this.href=this.href
+                    .replace(/AT/,'@')
+                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
             </ul>
         </div>
     </div>
 
     <section id="home">
-        <div class="container">
-            <div class="row" data-aos="fade-right" data-aos-duration="700">
+        <div class="container" data-aos="fade-right" data-aos-duration="900">
+            <div class="row">
                 <div class="column">
-                    <h1 class="heading"> KB Creative <br> Create & Design Web Solutions </h1>
+                    <h1 class="heading"><span style="border-bottom: 5px solid #4a90e2; line-height: 1.8em;">KB
+                            Creative</span> <br> Create &
+                        Design Web Solutions </h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been the industry's standard dummy text ever since the 1500s, </p>
                     <a href="#contact" class="primary-btn">Get in touch</a>
                 </div>
                 <div class="column">
-                    <img src="../img/KB Creative.png" alt="Logo KB Creative" height="300" width="525">
+                    <img src="../img/illustrations/illu-dev-design.png" alt="Development image" height="350"
+                        style="float: right;">
                 </div>
             </div>
         </div>
     </section>
 
     <section id="service">
-        <div class="container">
+        <div class="container" data-aos="fade-right" data-aos-duration="900">
             <h1 class="heading">Our service <span class="header-dot">.</span></h1>
-            <div class="row" data-aos="fade-right" data-aos-duration="700">
+            <div class="row">
                 <div class="column">
                     <div class="card">
                         <img src="../img/icons/design-icon.png" width="70" alt="Design Icon">
@@ -73,9 +85,9 @@
 
     <section id="about">
         <div class="diagonal-content">
-            <div class="container">
+            <div class="container" data-aos="fade-right" data-aos-duration="900">
                 <h1 class="heading">About us <span class="header-dot">.</span></h1>
-                <div class="row" data-aos="fade-right" data-aos-duration="700">
+                <div class="row">
                     <div class="column">
                         <h2 class="subheading">Young Professionals</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -90,8 +102,8 @@
                         <a href="#contact" class="primary-btn">Send mail</a>
                     </div>
                     <div class="column">
-                        <img src="../img/photo-about.jpg" alt="Web Development computer" height="300"
-                            style="margin-left: 20px;">
+                        <img src="../img/illustrations/illu-about.png" alt="Web Development computer" height="300"
+                            style="float: right;">
                     </div>
                 </div>
             </div>
@@ -99,10 +111,13 @@
     </section>
 
     <section id="contact">
-        <div class="container">
+        <div class="container" data-aos="fade-right" data-aos-duration="900">
             <h1 class="heading">Contact <span class="header-dot">.</span></h1>
             <div class="row">
                 <div class="column">
+                    <p>Want to work together or have us create and design a fully customized website for
+                        you? Don't hesitate to <b>get in contact</b> with us so we can start working on your digital
+                        solution!</p><br>
                     <!-- Redirect to thank you page -->
                     <script type="text/javascript">var submitted = false;</script>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
@@ -130,15 +145,25 @@
                     </form>
                 </div>
                 <div class="column">
-
+                    <img src="../img/illustrations/illu-contact.png" alt="Development image" height="400"
+                        style="float: right;">
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-duration="900">
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto:kbcreativeAThotmailDOTcom" onclick="this.href=this.href
+                    .replace(/AT/,'@')
+                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            <img src="../img/logo/kb-creative-logo-white.png" alt="KB Creative logo white" height="70">
 
+            <p style="color: rgba(255, 255, 255, 0.575); font-size: 14px;">© Copyright KB Creative | 2020</p>
         </div>
     </footer>
 
@@ -147,6 +172,10 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+
+    AOS.init({
+        once: true, // whether animation should happen only once - while scrolling down
+    });
 </script>
 
 </html>
