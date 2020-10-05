@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Animation AOS Init import -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>KB Creative | Webdesign and Development</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-content">
+            <a href="#home"><img src="../img/KB Creative.png" alt="Logo KB Creative" class="logo-header"></a>
+            <ul class="header-nav" data-aos="fade-down" data-aos-duration="300">
+                <li><a href="#service">Service</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <div class="row" data-aos="fade-right" data-aos-duration="700">
+                <div class="column">
+                    <h1 class="heading"> KB Creative <br> Create & Design Web Solutions </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, </p>
+                    <a href="#contact" class="primary-btn">Get in touch</a>
+                </div>
+                <div class="column">
+                    <img src="../img/KB Creative.png" alt="Logo KB Creative" height="300" width="525">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <div class="container">
+            <h1 class="heading">Our service <span class="header-dot">.</span></h1>
+            <div class="row" data-aos="fade-right" data-aos-duration="700">
+                <div class="column">
+                    <div class="card">
+                        <img src="../img/icons/design-icon.png" width="70" alt="Design Icon">
+                        <h2 class="subheading">Design</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../img/icons/dev-icon.png" width="70" alt="Development Icon">
+                        <h2 class="subheading">Develop</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../img/icons/security-icon.png" width="70" alt="Design Icon">
+                        <h2 class="subheading">Fullstack</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="diagonal-content">
+            <div class="container">
+                <h1 class="heading">About us <span class="header-dot">.</span></h1>
+                <div class="row" data-aos="fade-right" data-aos-duration="700">
+                    <div class="column">
+                        <h2 class="subheading">Young Professionals</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply
+                            dummy
+                            text of the printing and typesetting industry. <b> Lorem Ipsum
+                                has </b> been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is
+                            simply
+                            dummy
+                            text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s. </p>
+                        <a href="#contact" class="primary-btn">Send mail</a>
+                    </div>
+                    <div class="column">
+                        <img src="../img/photo-about.jpg" alt="Web Development computer" height="300"
+                            style="margin-left: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h1 class="heading">Contact <span class="header-dot">.</span></h1>
+            <div class="row">
+                <div class="column">
+                    <!-- Redirect to thank you page -->
+                    <script type="text/javascript">var submitted = false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {window.location='contact-finished.html';}"></iframe>
+
+                    <!-- Form submit to Google Forms -->
+                    <form target="hidden_iframe" onsubmit="submitted=true;"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSdG0Y9m3Blh4fOqaUwe5oO6DbhnFBQbTkQmXkFLpNCcx141Wg/formResponse"
+                        method="POST">
+
+                        <label for="fname">Name *</label>
+                        <input type="text" id="fname" name="entry.2005620554" placeholder="Your name.." required>
+
+                        <label for="country">E-mail *</label>
+                        <input type="text" name="entry.1045781291" id="" placeholder="example@hotmail.com" required>
+
+                        <label for="subject">Phone number *</label>
+                        <input type="number" name="entry.1065046570" id="" required>
+
+                        <label>Message *</label>
+                        <textarea rows="5" placeholder="Message*" name="entry.190021963" required></textarea>
+
+                        <input type="submit" name="entry.839337160" value="Submit">
+
+                    </form>
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
