@@ -92,7 +92,6 @@ a {
 	left: 0;
 	top: 0;
 	height: 98%;
-	line-height: 7vh;
 }
 
 section {
@@ -225,7 +224,7 @@ label {
 	background: #f8f8f8;
 	color: white;
 	clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-	padding: 10rem 4%;
+	padding: 9rem 4%;
 }
 
 footer {
@@ -246,4 +245,95 @@ footer {
 	color: white;
 	font-size: 22px;
 	padding: 0 20px;
+}
+
+.topnav {
+	overflow: hidden;
+	position: relative;
+	min-height: 6.4vh;
+	display: none;
+	background: hsla(0, 0%, 100%, .95);
+	z-index: 99999;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .05);
+}
+
+.topnav #myLinks {
+	display: none;
+	padding-top: 20px;
+}
+
+.topnav a {
+	color: #242424;
+	padding: 14px 16px;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+}
+
+.topnav #myLinks a:hover {
+	color: white;
+	background-color: #4a90e2;
+}
+
+.topnav .logo-header {
+	height: 100%;
+}
+
+.topnav a.icon {
+	color: #242424;
+	font-size: 22px;
+	line-height: 3vh;
+	margin-right: 15px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* Mobile responsive media queries */
+@media (max-width: 767px) {
+	h1 {
+		font-size: 38px !important;
+		line-height: 1.5em;
+	}
+
+	h2 {
+		font-size: 24px !important;
+	}
+
+	.header-socials,
+	.header {
+		display: none !important;
+	}
+
+	.diagonal-content {
+		padding: 9rem 2%;
+		clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+	}
+
+	.header,
+	.logo-header {
+		max-height: 6vh;
+	}
+
+	.logo-header {
+		padding-left: 20px;
+	}
+
+	.topnav {
+		display: block !important;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	.row {
+		display: inline-block !important;
+		margin-right: -80%;
+	}
+
+	.card {
+		margin: 30px 0;
+	}
 }
