@@ -328,12 +328,14 @@ footer {
 		width: 100%;
 	}
 
+	.card {
+		margin: 30px 0;
+	}
+}
+
+@media (max-width: 1100px) {
 	.row {
 		display: inline-block !important;
 		margin-right: -80%;
-	}
-
-	.card {
-		margin: 30px 0;
 	}
 }
