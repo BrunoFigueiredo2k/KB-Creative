@@ -20,7 +20,35 @@
 
 <body>
 
-    <?php include '../components/header.php' ?>
+    <div class="header">
+        <div class="header-content">
+            <ul class="header-nav" data-aos="fade-down" data-aos-duration="600">
+                <li><a href="#home"><img src="../img/logo/KB Creative.png" alt="Logo KB Creative" class="logo-header"></a>
+                </li>
+                <li class="header-li" id="header-li"><a href="#service" style="margin-left: 40px;">Service</a></li>
+                <li class="header-li" id="header-li"><a href="#about">About</a></li>
+                <li class="header-li" id="header-li"><a href="#contact">Contact</a></li>
+                <li class="header-socials"><a href="#"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                <li class="header-socials"><a href="https://www.linkedin.com/company/kbcreative-nl" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="header-socials"><a href="mailto:kbcreativeAThotmailDOTcom" onclick="this.href=this.href
+                    .replace(/AT/,'@')
+                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#home"><img src="../img/logo/KB Creative.png" alt="Logo KB Creative" class="logo-header" id="logo"></a>
+        <div id="myLinks">
+            <a href="#service" onclick="closeDropdown()">Service</a>
+            <a href="#about" onclick="closeDropdown()">About</a>
+            <a href="#contact" onclick="closeDropdown()">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <section id="home">
         <div class="container" data-aos="fade-right" data-aos-duration="900">
@@ -111,7 +139,7 @@
                     <script type="text/javascript">
                         var submitted = false;
                     </script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='contact-finished.php';}"></iframe>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='contact-finished.html';}"></iframe>
 
                     <!-- Form submit to Google Forms -->
                     <form target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSdG0Y9m3Blh4fOqaUwe5oO6DbhnFBQbTkQmXkFLpNCcx141Wg/formResponse" method="POST">
@@ -139,7 +167,20 @@
         </div>
     </section>
 
-    <?php include '../components/footer.php' ?>
+    <footer>
+        <div class="container">
+            <ul class=" socials">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/kbcreative-nl" rel="noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto:kbcreativeAThotmailDOTcom" target="_blank" onclick="this.href=this.href
+                    .replace(/AT/,'@')
+                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+            <img src="../img/logo/kb-creative-logo-white.png" alt="KB Creative logo white" height="70">
+
+            <p style="color: rgba(255, 255, 255, 0.575); font-size: 14px;">© Copyright KB Creative | 2020</p>
+        </div>
+    </footer>
 
 </body>
 
