@@ -20,37 +20,7 @@
 
 <body>
 
-    <div class="header">
-        <div class="header-content">
-            <ul class="header-nav" data-aos="fade-down" data-aos-duration="600">
-                <li><a href="#home"><img src="../img/logo/KB Creative.png" alt="Logo KB Creative"
-                            class="logo-header"></a>
-                </li>
-                <li class="header-li" id="header-li"><a href="#service" style="margin-left: 40px;">Service</a></li>
-                <li class="header-li" id="header-li"><a href="#about">About</a></li>
-                <li class="header-li" id="header-li"><a href="#contact">Contact</a></li>
-                <li class="header-socials"><a href="#"><i class="fab fa-instagram" target="_blank"></i></a></li>
-                <li class="header-socials"><a href="https://www.linkedin.com/company/kbcreative-nl" rel="noopener"
-                        target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li class="header-socials"><a href="mailto:kbcreativeAThotmailDOTcom" onclick="this.href=this.href
-                    .replace(/AT/,'@')
-                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <a href="#home"><img src="../img/logo/KB Creative.png" alt="Logo KB Creative" class="logo-header" id="logo"></a>
-        <div id="myLinks">
-            <a href="#service" onclick="closeDropdown()">Service</a>
-            <a href="#about" onclick="closeDropdown()">About</a>
-            <a href="#contact" onclick="closeDropdown()">Contact</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    <?php include '../components/header.php' ?>
 
     <section id="home">
         <div class="container" data-aos="fade-right" data-aos-duration="900">
@@ -59,13 +29,13 @@
                     <h1 class="heading"><span style="border-bottom: 5px solid #4a90e2; line-height: 1.8em;">KB
                             Creative</span> <br> Create &
                         Design Web Solutions </h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has been the industry's standard dummy text ever since the 1500s, </p>
+                    <p>Agency in Amsterdam that creates and designs full-stack web applications. With a broad skill set
+                        ranging from
+                        design, development, SEO and much more!</p>
                     <a href="#contact" class="primary-btn">Get in touch</a>
                 </div>
                 <div class="column">
-                    <img src="../img/illustrations/illu-dev-design.png" alt="Development image" height="350"
-                        style="float: right;">
+                    <img src="../img/illustrations/illu-dev-design.png" alt="Development image" height="350" style="float: right;">
                 </div>
             </div>
         </div>
@@ -122,8 +92,7 @@
                         <a href="#contact" class="primary-btn">Send mail</a>
                     </div>
                     <div class="column">
-                        <img src="../img/illustrations/illu-about.png" loading="lazy" alt="Web Development computer"
-                            height="300" style="float: right;">
+                        <img src="../img/illustrations/illu-about.png" loading="lazy" alt="Web Development computer" height="300" style="float: right;">
                     </div>
                 </div>
             </div>
@@ -139,57 +108,38 @@
                         you? Don't hesitate to <b>get in contact</b> with us so we can start working on your digital
                         solution!</p><br>
                     <!-- Redirect to thank you page -->
-                    <script type="text/javascript">var submitted = false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                        onload="if(submitted) {window.location='contact-finished.html';}"></iframe>
+                    <script type="text/javascript">
+                        var submitted = false;
+                    </script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='contact-finished.php';}"></iframe>
 
                     <!-- Form submit to Google Forms -->
-                    <form target="hidden_iframe" onsubmit="submitted=true;"
-                        action="https://docs.google.com/forms/d/e/1FAIpQLSdG0Y9m3Blh4fOqaUwe5oO6DbhnFBQbTkQmXkFLpNCcx141Wg/formResponse"
-                        method="POST">
+                    <form target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSdG0Y9m3Blh4fOqaUwe5oO6DbhnFBQbTkQmXkFLpNCcx141Wg/formResponse" method="POST">
 
                         <label for="fname">Name <span class="required-form">*</span></label>
                         <input type="text" id="fname" name="entry.2005620554" placeholder="Your name.." required>
 
                         <label for="email">E-mail <span class="required-form">*</span></label>
-                        <input type="text" name="entry.1045781291" id="email" placeholder="example@hotmail.com"
-                            required>
+                        <input type="text" name="entry.1045781291" id="email" placeholder="example@hotmail.com" required>
 
                         <label for="phone-number">Phone number <span class="required-form">*</span></label>
-                        <input type="number" name="entry.1065046570" placeholder="0612345678" id="phone-number" required
-                            minlength="10" maxlength="10">
+                        <input type="number" name="entry.1065046570" placeholder="0612345678" id="phone-number" required minlength="10" maxlength="10">
 
                         <label for="message">Message <span class="required-form">*</span></label>
-                        <textarea rows="5" placeholder="Type your message here..." id="message" name="entry.190021963"
-                            required maxlength="500"></textarea>
+                        <textarea rows="5" placeholder="Type your message here..." id="message" name="entry.190021963" required maxlength="500"></textarea>
 
                         <input type="submit" name="entry.839337160" value="Submit">
 
                     </form>
                 </div>
                 <div class="column">
-                    <img src="../img/illustrations/illu-contact.png" loading="lazy" alt="Development image"
-                        class="illustration-img" height="400" style="float: right;">
+                    <img src="../img/illustrations/illu-contact.png" loading="lazy" alt="Development image" class="illustration-img" height="400" style="float: right;">
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <ul class=" socials">
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/kbcreative-nl" rel="noopener" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="mailto:kbcreativeAThotmailDOTcom" target="_blank" onclick="this.href=this.href
-                    .replace(/AT/,'@')
-                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
-            </ul>
-            <img src="../img/logo/kb-creative-logo-white.png" alt="KB Creative logo white" height="70">
-
-            <p style="color: rgba(255, 255, 255, 0.575); font-size: 14px;">© Copyright KB Creative | 2020</p>
-        </div>
-    </footer>
+    <?php include '../components/footer.php' ?>
 
 </body>
 
