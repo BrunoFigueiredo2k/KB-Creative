@@ -339,3 +339,12 @@ footer {
 		margin-right: -80%;
 	}
 }
+
+#about-img {
+	margin: 20px 0 0 20px;
+	border-radius: 10px;
+	float: right;
+	max-width: 100%;
+	height: auto;
+	max-height: 350px;
+}
