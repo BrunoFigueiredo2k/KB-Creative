@@ -338,6 +338,10 @@ footer {
 		display: inline-block !important;
 		margin-right: -80%;
 	}
+
+	#about-img {
+		margin-top: 50px !important;
+	}
 }
 
 #about-img {
