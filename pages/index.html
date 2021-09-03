@@ -22,11 +22,12 @@
 
     <div class="header">
         <div class="header-content">
-            <ul class="header-nav" data-aos="fade-down" data-aos-duration="600">
+            <ul class="header-nav">
                 <li><a href="#home" class="logo-link"><img src="../img/logo/KB Creative.png" alt="Logo KB Creative"
                             class="logo-header"></a>
                 </li>
                 <li class="header-li" id="header-li"><a href="#service" style="margin-left: 40px;">Service</a></li>
+                <li class="header-li" id="header-li"><a href="#projects">Projects</a></li>
                 <li class="header-li" id="header-li"><a href="#about">About</a></li>
                 <li class="header-li" id="header-li"><a href="#contact">Contact</a></li>
                 <li class="header-socials"><a href="https://www.instagram.com/kbcreative.nl/" rel="noopener"
@@ -35,7 +36,8 @@
                         target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                 <li class="header-socials"><a href="mailto:kbcreativeAThotmailDOTcom" onclick="this.href=this.href
                     .replace(/AT/,'@')
-                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
+                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a>
+                </li>
             </ul>
         </div>
     </div>
@@ -47,6 +49,7 @@
         <div id="myLinks">
             <a href="#service" onclick="closeDropdown()">Service</a>
             <a href="#about" onclick="closeDropdown()">About</a>
+            <a href="#projects" onclick="closeDropdown()">Projects</a>
             <a href="#contact" onclick="closeDropdown()">Contact</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -55,18 +58,21 @@
     </div>
 
     <section id="home">
-        <div class="container" data-aos="fade-right" data-aos-duration="900">
+        <div class="container">
             <div class="row">
-                <div class="column">
-                    <h1 class="heading"><span style="border-bottom: 5px solid #4a90e2; line-height: 1.8em;">KB
+                <div class="column" data-aos="fade-right" data-aos-duration="700">
+                    <h1 class="heading landing-title"><span
+                            style="border-bottom: 5px solid #4a90e2; line-height: 1.8em;">KB
                             Creative</span> <br> Create &
                         Design Web Solutions </h1>
-                    <p>Agency in Amsterdam that creates and designs full-stack web applications. With a broad skill set
+                    <p class="landing-paragraph">Agency in Amsterdam that creates and designs full-stack web
+                        applications. With a broad skill
+                        set
                         ranging from
                         design, development, SEO and much more!</p>
                     <a href="#contact" class="primary-btn">Get in touch</a>
                 </div>
-                <div class="column">
+                <div class="column" data-aos="fade-left" data-aos-duration="700">
                     <img src="../img/illustrations/illu-home.svg" alt="Development image" height="350"
                         style="float: right;">
                 </div>
@@ -75,56 +81,88 @@
     </section>
 
     <section id="service">
-        <div class="container" data-aos="fade-right" data-aos-duration="900">
+        <div class="container" data-aos="fade-right" data-aos-duration="700">
             <h1 class="heading">Our service <span class="header-dot">.</span></h1>
             <div class="row">
                 <div class="column">
-                    <div class="card">
-                        <img src="../img/icons/dev-icon.png" loading="lazy" width="70" alt="Design Icon">
+                    <div class="card card-hover column">
+                        <img src="../img/icons/dev-icon.png" loading="lazy" width="70" alt="Development Icon"
+                            class="img-icon">
                         <h2 class="subheading">Build</h2>
-                        <p>We create <b>full-stack</b> web solutions. In need of a website where the user needs to sign
+                        <p>We create <b>full-stack</b> web solutions. In need of a website where the user needs to
+                            sign
                             up
                             safely? No problem, we can help you with that!</p>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
-                        <img src="../img/icons/design-icon.png" loading="lazy" width="70" alt="Development Icon">
+                    <div class="card card-hover">
+                        <img src="../img/icons/design-icon.png" loading="lazy" width="70" alt="Design Icon"
+                            class="img-icon">
                         <h2 class="subheading">Design</h2>
-                        <p>Aside from creating, we design your <b>entire</b> website based on your needs so you don’t
+                        <p>Aside from creating, we design your <b>entire</b> website based on your needs so you
+                            don’t
                             have to hire a
                             designer or do this yourself. </p>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
-                        <img src="../img/icons/security-icon.png" loading="lazy" width="70" alt="Design Icon">
+                    <div class="card card-hover">
+                        <img src="../img/icons/security-icon.png" loading="lazy" width="70" alt="Security Icon"
+                            class="img-icon">
                         <h2 class="subheading">Secure</h2>
                         <p>In a time where internet security is more important than ever, we make sure your site is
-                            <b>secure</b> using the <b>latest</b> technologies. </p>
+                            <b>secure</b> using the <b>latest</b> technologies.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- <section id="reviews">
+        <div class="container" data-aos="fade-right" data-aos-duration="700">
+            <h1 class="heading">Reviews <span class="header-dot">.</span></h1>
+            <div class="row" id="reviews-row">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="projects">
+        <div class="container" data-aos="fade-right" data-aos-duration="700">
+            <h1 class="heading">Projects <span class="header-dot">.</span>
+            </h1>
+            <div class="row" id="projects-row-1">
+
+            </div>
+        </div>
+    </section>
+
     <section id="about">
         <div class="diagonal-content">
-            <div class="container" data-aos="fade-right" data-aos-duration="900">
+            <div class="container" data-aos="fade-right" data-aos-duration="700">
                 <h1 class="heading">About us <span class="header-dot">.</span></h1>
                 <div class="row">
                     <div class="column">
                         <h2 class="subheading">Young Professionals</h2>
-                        <p>We’re Bruno and Koen, two young professionals with a passion for web development. We met at
+                        <p>We’re Bruno and Koen, two young professionals with a passion for web development. We met
+                            at
                             the HvA where we both studied Business IT & Management. We bonded over our love for
-                            programming. Both of us have our own area of expertise with Koen focusing on back-end and
+                            programming. Both of us have our own area of expertise with Koen focusing on back-end
+                            and
                             databases while Bruno focuses on front-end and user experience. We use our knowledge
-                            acquired during our studies at the Hogeschool van Amsterdam to build a solution that aligns
+                            acquired during our studies at the Hogeschool van Amsterdam to build a solution that
+                            aligns
                             with your customer and business needs.
                         </p>
                         <a href="mailto:kbcreativeAThotmailDOTcom" onclick="this.href=this.href
-                        .replace(/AT/,'@')
-                        .replace(/DOT/,'.')" class="primary-btn">Mail us</a>
+                            .replace(/AT/,'@')
+                            .replace(/DOT/,'.')" class="primary-btn">Mail us</a>
                     </div>
                     <div class="column">
                         <img src="../img/about-us.png" loading="lazy" id="about-img" alt="Web Development computer"
@@ -136,8 +174,9 @@
     </section>
 
     <section id="contact">
-        <div class="container" data-aos="fade-right" data-aos-duration="900">
-            <h1 class="heading">Contact <span class="header-dot">.</span></h1>
+        <div class="container" data-aos="fade-right" data-aos-duration="700">
+            <h1 class="heading">Contact <span class="header-dot">.</span>
+            </h1>
             <div class="row">
                 <div class="column">
                     <p>Want to work together or have us create and design a fully customized website for
@@ -167,10 +206,10 @@
                             minlength="10" maxlength="10">
 
                         <label for="message">Message <span class="required-form">*</span></label>
-                        <textarea rows="5" placeholder="Type your message here..." id="message" name="entry.190021963"
+                        <textarea rows="5" placeholder="Type your message here..." id="message" name="entry.839337160"
                             required maxlength="500"></textarea>
 
-                        <input type="submit" name="entry.839337160" value="Submit">
+                        <input type="submit" value="Submit">
 
                     </form>
                 </div>
@@ -184,22 +223,25 @@
 
     <footer>
         <div class="container">
-            <ul class=" socials">
+            <ul class="socials">
                 <li><a href="https://www.instagram.com/kbcreative.nl/" rel="noopener" target="_blank"><i
                             class="fab fa-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/company/kbcreative-nl" rel="noopener" target="_blank"><i
                             class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="mailto:kbcreativeAThotmailDOTcom" onclick="this.href=this.href
                     .replace(/AT/,'@')
-                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a></li>
+                    .replace(/DOT/,'.')" style="text-decoration: underline;"><i class="fas fa-envelope"></i></a>
+                </li>
             </ul>
-            <img src="../img/logo/kb-creative-logo-white.png" alt="KB Creative logo white" height="70">
+            <img src="../img/logo/KB Creative.png" alt="KB Creative logo white" height="70" />
 
-            <p style="color: rgba(255, 255, 255, 0.575); font-size: 14px;">© Copyright KB Creative | 2020</p>
+            <p style="font-size: 14px;">© Copyright KB Creative | 2020</p>
         </div>
     </footer>
-
 </body>
+
+<script src="../js/projects.js"></script>
+<script src="../js/reviews.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
