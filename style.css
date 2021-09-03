@@ -51,7 +51,7 @@ body {
 
 a {
 	color: blue;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 .header-nav a {
@@ -114,7 +114,7 @@ section {
 	color: #4a90e2;
 }
 
-.landing-paragraph{
+.landing-paragraph {
 	font-size: 20px;
 }
 
@@ -156,7 +156,8 @@ p {
 	width: 100%;
 }
 
-.column, .review-content {
+.column,
+.review-content {
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1;
@@ -170,21 +171,20 @@ p {
 	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.027);
 }
 
-.img-icon{
+.img-icon {
 	transition: 200ms ease-in-out;
 	opacity: 0.7;
 }
 
-.card-hover:hover{
+.card-hover:hover {
 	margin-top: -5px;
 	box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.027);
 }
 
-.card-hover:hover .img-icon{
+.card-hover:hover .img-icon {
 	transform: scale(1.05);
 	opacity: 1;
 }
-
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
@@ -209,7 +209,8 @@ textarea:focus {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit], .btn-project {
+input[type=submit],
+.btn-project {
 	background-color: #4a90e2;
 	color: white;
 	padding: 12px 30px;
@@ -304,18 +305,18 @@ footer {
 }
 
 .topnav a.icon {
-    color: #242424;
-    font-size: 22px;
-    margin-right: 20px;
-    display: block;
-    position: absolute;
-    line-height: 7vh;
-    right: 0;
-    padding: 0;
-    top: 0;
+	color: #242424;
+	font-size: 22px;
+	margin-right: 20px;
+	display: block;
+	position: absolute;
+	line-height: 7vh;
+	right: 0;
+	padding: 0;
+	top: 0;
 }
 
-.logo-link{
+.logo-link {
 	display: inline-block !important;
 }
 
@@ -360,11 +361,11 @@ footer {
 		margin: 30px 0;
 	}
 
-	.illustration-img{
+	.illustration-img {
 		width: 100% !important;
 	}
 
-	.container{
+	.container {
 		width: 90%;
 	}
 }
@@ -389,50 +390,60 @@ footer {
 	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.103);
 }
 
-.illustration-img{
+#g-recaptcha-response {
+	display: block !important;
+	position: absolute;
+	margin: -78px 0 0 0 !important;
+	width: 302px !important;
+	height: 76px !important;
+	z-index: -999999;
+	opacity: 0;
+}
+
+.illustration-img {
 	float: right;
 	width: 92%;
 }
 
-.project-top{
+.project-top {
 	width: 100%;
-	height:200px;
+	height: 200px;
 	margin: 0;
 	padding: 0;
 	border-bottom: 3px solid rgba(128, 128, 128, 0.11);
 }
 
-.project-card{
+.project-card {
 	border-radius: 18px;
-    box-shadow: 0 6px 20px rgba(56, 126, 255, 0.103) !important;
-    transition: all .2s ease-in-out;
-    background: #fff;
+	box-shadow: 0 6px 20px rgba(56, 126, 255, 0.103) !important;
+	transition: all .2s ease-in-out;
+	background: #fff;
 }
 
-.project-top img{
+.project-top img {
 	height: 100%;
 	width: 100%;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
 
-#projects-row-1 .card{
+#projects-row-1 .card {
 	padding: 0;
 	border: 3px solid rgba(128, 128, 128, 0.11);
 }
 
-.project-bottom{
+.project-bottom {
 	padding: 20px !important;
 }
 
-.project-bottom i{
+.project-bottom i {
 	margin-left: 5px;
 	font-size: 16px;
 }
 
-.project-type{
+.project-type {
 	padding: 0.6em 1em;
-    background-color: #242424bf;
+	background-color: #242424bf;
 	color: white;
 	border-radius: 20px;
 	font-size: 12px;
@@ -440,29 +451,29 @@ footer {
 	float: right;
 }
 
-#reviews{
+#reviews {
 	background-color: #242424;
 	text-align: center;
 }
 
-.review-content{
- 	padding: 10px 25px;
+.review-content {
+	padding: 10px 25px;
 }
 
-#reviews .heading{
+#reviews .heading {
 	color: white !important;
 }
 
-#reviews .header-dot{
-	color: #5a9be6 !important;;
+#reviews .header-dot {
+	color: #5a9be6 !important;
 }
 
-.review-author{
+.review-author {
 	font-size: 15px;
 	color: #ccc;
 }
 
-.review-logo{
+.review-logo {
 	border-radius: 50%;
 	border: 2px solid #ccc;
 	display: inline;

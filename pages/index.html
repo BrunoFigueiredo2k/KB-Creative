@@ -246,6 +246,15 @@
 
 <script src="../js/projects.js"></script>
 <script src="../js/reviews.js"></script>
+<script>
+    window.onload = function () {
+        var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+        if ($recaptcha) {
+            $recaptcha.setAttribute("required", "required");
+        }
+    };
+</script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
